@@ -6098,10 +6098,10 @@ mute-stream@0.0.7:
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
   integrity sha1-MHXOk7whuPq0PhvE2n6BFe0ee6s=
 
-my-redux@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/my-redux/-/my-redux-0.0.2.tgz#cc2017895baa8fc192ee1f60c8ff644f50d36a1a"
-  integrity sha512-S6JMDHVfdHFq+nClKP4XsWp2j/P2Gg1kITmiU7VAqhof5R7WxneRJoP1BAjVZ7E3oqBnTm95IE+1ERpmd0y53A==
+my-redux@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/my-redux/-/my-redux-0.0.3.tgz#71633bf4b40a65a195f0dc8bf5b15e87d18729b6"
+  integrity sha512-t8ggx7F1IZdabe1kCeL9THMUu78eqYmrWOAcHMe5aLpk3mboc2O1neO6tCfBno+dk2nnFkMhHeBco/yekLVjrQ==
 
 nan@^2.9.2:
   version "2.11.1"

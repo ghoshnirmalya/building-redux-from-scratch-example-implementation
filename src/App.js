@@ -20,38 +20,29 @@ class App extends Component {
     this.store = createStore(reducer, initialState);
   }
 
+  state = { count: 0 }
+
   handleClick = () => {
     this.store.dispatch({
       type: "INCREMENT",
       payload: {
-        count: this.store.getState().count + 1
+        count: 1
       }
     })
 
-    console.log(this.store.getState());
+    this.setState({ count: this.store.getState().count });
   }
 
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          <button className="App-button" onClick={this.handleClick}>Click</button>
-        </header>
-      </div>
-    );
-  }
+  render = () =>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <button className="App-button" onClick={this.handleClick}>
+          Click
+        </button>
+        You have clicked {this.state.count} times
+      </header>
+    </div>
 }
 
 export default App;
