@@ -1,18 +1,16 @@
 {
   "name": "my-redux-example",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.5",
   "dependencies": {
-    "my-redux": "^0.0.3",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-scripts": "2.0.3"
+    "core-js": "^3.4.7",
+    "my-redux": "^0.0.5",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": "react-app"

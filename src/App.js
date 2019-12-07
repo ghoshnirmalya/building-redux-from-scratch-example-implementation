@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import createStore from "my-redux";
 
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 class App extends Component {
   constructor() {
@@ -20,7 +20,7 @@ class App extends Component {
     this.store = createStore(reducer, initialState);
   }
 
-  state = { count: 0 }
+  state = { count: 0 };
 
   handleClick = () => {
     this.store.dispatch({
@@ -28,21 +28,26 @@ class App extends Component {
       payload: {
         count: 1
       }
-    })
+    });
 
     this.setState({ count: this.store.getState().count });
-  }
+  };
 
-  render = () =>
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <button className="App-button" onClick={this.handleClick}>
-          Click
-        </button>
-        You have clicked {this.state.count} times
-      </header>
-    </div>
+  render() {
+    console.log(this.store.getState());
+
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <button className="App-button" onClick={this.handleClick}>
+            Click
+          </button>
+          You have clicked {this.state.count} times
+        </header>
+      </div>
+    );
+  }
 }
 
 export default App;
