@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import createStore from "my-redux";
 
-import logo from "./logo.svg";
 import "./App.css";
 
 class App extends Component {
@@ -39,11 +38,10 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <button className="App-button" onClick={this.handleClick}>
             Click
           </button>
-          You have clicked {this.state.count} times
+          You have clicked {this.store.getState().count} times
         </header>
       </div>
     );
